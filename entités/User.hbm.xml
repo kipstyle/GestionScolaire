@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name = "User" table = "User" >
+<meta attribute = "class-description" >
+</meta>
+<id name = "idUser" type = "int" column = "codeUser" >
+<generator class = "native" />
+</id>
+<property name = "prenomUser" column = "prenomUser" type = "string" />
+<property name = "nomUser" column = "nomUser" type = "string" />
+<property name = "telUser" column = "telUser" type = "int" />
+<property name = "loginUser" column = "loginUser" type = "string" />
+<property name = "motdepasseUser" column = "motdepasseUser" type = "string" />
+<property name = "profilUser" column = "profilUser" type = "string" />
+</class>
+</hibernate-mapping>
